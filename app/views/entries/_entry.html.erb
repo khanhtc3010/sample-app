@@ -10,4 +10,10 @@
                                        data: { confirm: "You sure?" } %>
     <% end %>
   </span>
+  <span class="comments">
+    <%= render "comments/comment", entry: entry %>
+  </span>
+  <span class="comment_form">
+  	<%= render "shared/comment_form", entry: entry %>
+  </span>
 </li>

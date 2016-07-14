@@ -1,0 +1,8 @@
+<ul>
+  <% entry.comments.each do |c| %>
+  <li>
+    <%= c.content %>
+    commented by <%= c.user.name %> at <%= c.created_at %>
+  </li>
+  <% end %>
+</ul>
