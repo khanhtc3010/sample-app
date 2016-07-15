@@ -1,8 +1,12 @@
 <ul>
   <% entry.comments.each do |c| %>
   <li>
-    <%= c.content %>
-    commented by <%= c.user.name %> at <%= c.created_at %>
+  	<p style="word-wrap: break-word; white-space: line-break;">
+      <%= c.content %>
+    </p>
+    <p style="opacity: 0.4;">
+      commented by <%= c.user.name %> at <%= c.created_at %>
+    </p>
   </li>
   <% end %>
 </ul>

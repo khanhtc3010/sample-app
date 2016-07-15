@@ -4,10 +4,17 @@
       <section class="user_info">
         <%= render 'shared/user_info' %>
       </section>
+      <section class="stats">
+        <%= render 'shared/stats' %>
+      </section>
       <section class="entry_form">
         <%= render 'shared/entry_form' %>
       </section>
     </aside>
+    <div class="col-md-8">
+      <h3>Entries Feed</h3>
+      <%= render 'shared/feed' %>
+    </div>
   </div>
 <% else %>
 <div class="center jumbotron">
@@ -19,7 +26,9 @@
     sample application.
   </h2>
 
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  <div><%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %></div>
+  <p></p>
+  <div><%= link_to "Take a look now!", feed_path, class: "btn btn-lg btn-primary" %></div>
 </div>
 
 <%= link_to image_tag("rails.png", alt: "Rails logo"), 'http://rubyonrails.org/' %>
