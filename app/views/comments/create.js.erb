@@ -1,0 +1,2 @@
+$("#entry-<%= @comment.entry.id %> .comments").append("<%= escape_javascript(render('comments/atomic_comment', c: @comment)) %>");
+$("#entry-<%= @comment.entry.id %> .comment_form textarea").val("");
